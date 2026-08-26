@@ -1,13 +1,14 @@
-package Exercícios.Lista02;
+package Exercicios.Lista02;
 
-import java.util.scanner; 
+import java.util.Scanner; 
 
+public class ParOuImpar{
 public static void main(String[] args){
 
     Scanner sc = new Scanner(System.in);
 
     System.out.print("Insira seu numero: ");
-    int numero = sc.nextint();
+    int numero = sc.nextInt();
 
 
     int resultado = numero % 2 ;
@@ -15,9 +16,10 @@ public static void main(String[] args){
     if(resultado == 0){
         System.out.println("O numero digitado e par");
     }else{
-        System.out.println("O numero digitado e par");
+        System.out.println("O numero digitado e impar");
     }
 
     sc.close();
 
+}
 }
