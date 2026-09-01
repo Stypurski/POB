@@ -13,7 +13,7 @@ public class MediaTurmaAlunosAcima{
         double vetor[] = new double[8];
 
         double soma = 0;
-        for(int i = 1; i<8; i++){
+        for(int i = 0; i<8; i++){
             System.out.print("Insira a nota do aluno numero " + (i + 1) + ":");
             vetor[i] = sc.nextDouble();
             soma += vetor[i];
@@ -24,30 +24,29 @@ public class MediaTurmaAlunosAcima{
         int cont = 0;
 
         for(int i=0; i<8; i++){
-            if(vetor[i] >= media){
+            if(vetor[i] > media){
             cont++;
             }
         }
-
+        
+        int j = 0;
         int alunosAcima[] = new int[cont];
         double notasAcima[] = new double[cont];
         for(int i=0; i<8; i++){
             if(vetor[i] > media){
 
-                    int j = 0;
                     alunosAcima[j] = i;
                     notasAcima[j] = vetor[i];
-                
-
+                    j++;
             }
         }
 
         System.out.println("A media aritimetica geral fica em: " + df.format(media));
 
         System.out.println("Os seguintes alunos ficaram acima da media, com as seguintes notas: ");
-        for(int i = 0; i<5; i++ ){
+        for(int i = 0; i<cont; i++ ){
 
-            System.out.println("Aluno: " + alunosAcima[i] + "Nota: " + df.format(notasAcima[i]));
+            System.out.println("Aluno: " + (alunosAcima[i] + 1) + " Nota: " + df.format(notasAcima[i]));
 
         }
 
