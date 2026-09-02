@@ -1,4 +1,4 @@
-package exercicios.exercicio04;
+package Exercícios.Lista01;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
