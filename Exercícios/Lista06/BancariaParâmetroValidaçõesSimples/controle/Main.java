@@ -19,12 +19,15 @@ public class Main {
         System.out.print("Insira o numero da conta: ");
         conta1.numeroConta = sc.nextLine();
 
-        int controle;
+        int controle = -1;
             
-        System.out.println("OPERACOES DISPONIVEIS: ");
+       while(controle!=0){
+
+         System.out.println("OPERACOES DISPONIVEIS: ");
             System.out.println("1: DEPOSITO ");
             System.out.println("2: SAQUE ");
             System.out.println("3: CONSULTA DE SALDO ");
+            System.out.println("0: SAIR ");
             System.out.print("Insira a operacao que deseja: ");
             controle = sc.nextInt();
 
@@ -46,11 +49,17 @@ public class Main {
                 conta1.consultarSaldo();
                 break;
             
+            case 0: 
+                System.out.print("Execucao encerrada: ");
+                break;
+                 
+            
             default: 
             System.out.print("Valor digitado invalido.");
             return;
 
         }
+       }
 
         sc.close();
 
