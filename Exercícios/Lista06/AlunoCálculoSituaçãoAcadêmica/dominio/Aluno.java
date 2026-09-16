@@ -7,12 +7,12 @@ public class Aluno {
     public double nota1;
     public double nota2;
 
-    public Double calcularMedia(){
+    public double calcularMedia(){
         return (nota1 + nota2)/2;
     } 
 
     public String verificarAprovacao(){
-        if(calcularMedia()>7){
+        if(this.calcularMedia()>7){
             return "Aprovado";
         }else{
             return "Reprovado";
