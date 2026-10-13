@@ -18,9 +18,8 @@ public class Main {
 
         List<Tributavel> itensTributaveis = new ArrayList<>();
 
-        // Adicionando eletrônicos à lista tributável:
-        itensTributaveis.add(new Eletronico(101, 2000.0)); // Tributo: 300.0
-        itensTributaveis.add(new Eletronico(102, 1500.0)); // Tributo: 225.0
+        itensTributaveis.add(new Eletronico(101, 2000.0)); 
+        itensTributaveis.add(new Eletronico(102, 1500.0)); 
 
         double total = calcularTotalImpostos(itensTributaveis);
         System.out.println("Total de impostos a pagar: R$ " + total);
