@@ -3,7 +3,7 @@ package Exercícios.Lista10.DivisãoSeguraMúltiplosBlocoscatchfinally;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Main{
+public class DivisãoSeguraMúltiplosBlocoscatchfinally{
     public static void main(String[] args){
         
         Scanner sc = new Scanner(System.in);
