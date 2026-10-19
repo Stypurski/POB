@@ -1,3 +1,5 @@
+package Exercícios.Lista10.DivisãoSeguraMúltiplosBlocoscatchfinally;
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
