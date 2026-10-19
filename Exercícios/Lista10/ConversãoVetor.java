@@ -1,6 +1,7 @@
+package Exercícios.Lista10.ConversãoVetor;
 import java.util.Scanner;
 
-public class Main{
+public class ConversãoVetor{
     public static void main(String[] args){
         
         Scanner sc = new Scanner(System.in);
