@@ -21,6 +21,9 @@ public class Processador{
             if(caminho == null || caminho.isEmpty()){
                 throw new IOException("Caminho nulo, ou vazio");
             }
+            if(!caminho.matches("\\d+")){
+                throw new NumberFormatException("Tipo de caracter inserido invalido");
+            }
             int processado = Integer.parseInt(caminho);
         }catch(IOException e){
             throw new ProcessamentoDadosException ("Erro ao processar arquivo", e);
