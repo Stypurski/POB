@@ -1,4 +1,4 @@
-package Exercícios.Lista10. EncadeamentoExceçõesProcessamentoArquivosSimulado.dominio;
+package Exercícios.Lista10.EncadeamentoExceçõesProcessamentoArquivosSimulado.dominio;
 
 import java.io.IOException;
 
