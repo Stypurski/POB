@@ -1,3 +1,5 @@
+package Exercícios.FixaçãoPrática.Produto;
+
 import java.util.Objects;
 
 public class Produto implements Comparable<Produto>{
