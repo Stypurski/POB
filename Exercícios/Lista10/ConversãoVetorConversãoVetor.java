@@ -1,4 +1,4 @@
-package Exercícios.Lista10.ConversãoVetor;
+package Exercícios.Lista10.ConversãoVetor.ConversãoVetor;
 import java.util.Scanner;
 
 public class ConversãoVetor{
