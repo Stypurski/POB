@@ -1,0 +1,71 @@
+package Exercícios.Lista11.GerenciamentoListaDinâmicaTarefas.controle;
+
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+import Exercícios.Lista11.GerenciamentoListaDinâmicaTarefas.dominio.GerenciadorTarefas;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        String temp;
+        
+        List<String> gerenciador = GerenciadorTarefas.criarTarefa();
+        System.out.println("Insira as tarefas desejadas: ");
+        for(int i =0; i< 5; i++){
+            temp = sc.nextLine();
+            gerenciador.add(temp);
+        }
+        
+        System.out.println("Deseja excluir uma tarefa?(S ou N");
+        boolean escolha = sc.nextLine().equalsIgnoreCase("S");
+        if(escolha){
+            System.out.println("Insira o tipo de busca de remoção que deseja: \n\t1-Por indice \n\t2-Por nome");
+            int tipo = sc.nextInt();
+            sc.nextLine();
+            
+            switch(tipo){
+                case 1:
+                    System.out.println("Insira o indice do item que deseja resolver: ");
+                    int indice = sc.nextInt();
+                    sc.nextInt();
+                    GerenciadorTarefas.remocaoIndice(gerenciador, indice);
+                    break;
+                    
+                case 2: 
+                    System.out.println("Insira o nome do item que deseja remover: ");
+                    String nome = sc.nextLine();
+                    boolean removido = GerenciadorTarefas.remocaoNome(gerenciador, nome);
+                    if(removido){
+                        System.out.println("Intem removido com sucesso");
+                    }else{
+                        System.out.println("Erro ao tentar remover");
+                    }
+                    break;
+                    
+                default:
+                    System.out.println("Tipo de busca escolhido invalido");
+                    break;
+            }
+        }
+        
+        System.out.println("Insira a tarefa que deseja verificar se existe: ");
+        String verificada =  sc.nextLine();
+        
+        boolean resultado = GerenciadorTarefas.verificador(gerenciador, verificada);
+        
+        if(resultado){
+            System.out.println("SUCESSO \n Sua tarefa existe na lista");
+        }else{
+            System.out.println("FALHA \n Sua tarefa não existe na lista");
+        }
+        
+        System.out.println("Lista antes de ser ordenada em ordem alfabetica: ");
+        GerenciadorTarefas.impressor(gerenciador);
+        System.out.println("Lista ordenada em ordem alfabetica: ");
+        GerenciadorTarefas.ordenador(gerenciador);
+        GerenciadorTarefas.impressor(gerenciador);
+    }
+}
