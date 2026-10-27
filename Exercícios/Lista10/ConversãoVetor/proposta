@@ -1,0 +1,3 @@
+Conversão de Vetor com NumberFormatException e ArrayIndexOutOfBoundsException
+Enunciado: Desenvolva um programa que contenha um vetor estático de Strings com 4 posições (ex: {"10", "25", "abc", "50"}). Solicite ao usuário um índice para acessar e converter o valor correspondente para um número inteiro (Integer.parseInt). Trate as exceções caso o usuário informe um índice inexistente ou se a string da posição escolhida não for um número válido.
+Conceitos: Captura de exceções de índice fora do limite (ArrayIndexOutOfBoundsException) e falha de conversão numérica (NumberFormatException).
