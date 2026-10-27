@@ -1,0 +1,46 @@
+package Exercícios.Lista11.GerenciamentoListaDinâmicaTarefas.dominio;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class GerenciadorTarefas{
+    
+    ArrayList<String> Tarefas = new ArrayList<>(); 
+    
+    public static List<String> criarTarefa(){
+        return new ArrayList<>();
+    }
+    
+    public static void remocaoIndice(List<String>gerenciador, int indice){
+        
+        if(indice <0 || indice > (gerenciador.size()) - 1){
+            System.out.println("Indice inválido");
+            return;
+        }else{
+            gerenciador.remove(indice);
+            System.out.println("Tarefa removida com sucesso");
+        }
+        
+    }
+    
+    public static boolean remocaoNome(List<String> gerenciador, String tarefaExcluida){
+        return gerenciador.remove(tarefaExcluida);
+    }
+    
+    public static boolean verificador(List<String> gerenciador, String tarefaProcurada){
+        
+        return gerenciador.contains(tarefaProcurada);
+    }
+    
+    public static void ordenador(List<String> gerenciador){
+        Collections.sort(gerenciador);
+    }
+    
+    public static void impressor(List<String> gerenciador){
+        
+        for(int i=0; i<gerenciador.size(); i++){
+            System.out.println("Item : " + i + " = " + gerenciador.get(i));
+        }
+    }
+}
