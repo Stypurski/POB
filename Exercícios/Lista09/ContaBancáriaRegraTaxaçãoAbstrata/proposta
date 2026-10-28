@@ -1,0 +1,11 @@
+Conta Bancária com Regra de Taxação Abstrata
+
+Enunciado: Crie uma classe abstrata ContaBancaria com atributos privados numero e saldo, métodos concretos depositar(double valor) e consultarSaldo(), e um método abstrato:
+
+abstract void cobrarTaxaMensal()
+Crie duas classes filhas:
+ContaCorrente: a taxa mensal é um valor fixo de R$ 15.00.
+ContaEmpresarial: a taxa mensal é de R$ 30.00 acrescida de 0.5% sobre o saldo atual.
+Instancie contas de ambos os tipos em uma lista polimórfica List<ContaBancaria> e execute a rotina de virada de mês chamando cobrarTaxaMensal() para todas.
+
+Conceitos: Template de comportamento com classes abstratas e garantia de execução obrigatória em subclasses especializadas.
