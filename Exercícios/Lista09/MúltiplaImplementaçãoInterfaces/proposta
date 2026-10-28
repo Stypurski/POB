@@ -1,0 +1,10 @@
+Múltipla Implementação de Interfaces (Autenticavel e Exportavel)
+
+Enunciado: Crie duas interfaces distintas:
+
+Autenticavel: método boolean autenticar(String senha).
+ExportavelJSON: método String exportarJSON().
+Crie a classe Usuario (com login e senha) que implemente apenas Autenticavel. Crie a classe Administrador (com login, senha e nivelAcesso) que implemente ambas as interfaces (implements Autenticavel, ExportavelJSON).
+
+Conceitos: Múltipla implementação de interfaces em Java e segregação de responsabilidades (Interface Segregation Principle).
+
