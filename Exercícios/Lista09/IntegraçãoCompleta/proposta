@@ -1,0 +1,14 @@
+ Integração Completa (Classe Abstrata + Interface)
+
+Enunciado: Projete um sistema para um parque eletrônico:
+
+
+Crie a interface Tributavel com o método double calcularTributo().
+Crie a classe abstrata Item com atributos codigo (int) e precoBase (double).
+Crie a classe Eletronico, que herda de Item (extends Item) e implementa a interface Tributavel (implements Tributavel). A taxa de tributo é de 15% sobre o precoBase.
+Crie a classe Alimento, que herda de Item, mas não é tributável (não implementa a interface).
+Na classe principal, crie uma função calcularTotalImpostos(List<Tributavel> itensTributaveis) e processe uma lista de itens sujeitos a tributação.
+
+Conceitos: Combinação simultânea de herança simples (extends) com implementação de contratos (implements) e filtragem por tipo de interface.
+
+
