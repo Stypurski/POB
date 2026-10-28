@@ -1,0 +1,6 @@
+Hierarquia de Veículos e Sobrescrita Básica
+Enunciado: Crie uma superclasse Veiculo com os atributos marca (String) e modelo (String), além de um método exibirDetalhes(). Em seguida, crie duas subclasses:
+Carro: adiciona o atributo quantidadePortas (int) e sobrescreve exibirDetalhes().
+Moto: adiciona o atributo cilindradas (int) e sobrescreve exibirDetalhes().
+Utilize a palavra-chave super nos construtores das subclasses para reaproveitar a inicialização da classe base e no método sobrescrito.
+Conceitos: Herança (extends), construtor da superclasse (super()) e sobrescrita de métodos (@Override).
