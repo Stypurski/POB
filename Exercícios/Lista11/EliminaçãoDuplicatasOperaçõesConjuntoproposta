@@ -1,0 +1,6 @@
+Exercício 2: Eliminação de Duplicatas e Operações de Conjunto (HashSet)
+Enunciado: Desenvolva um programa que leia uma sequência de códigos de matrícula de alunos (inteiros) de duas turmas diferentes (Turma A e Turma B). Armazene cada turma em um HashSet<Integer> para eliminar registros duplicados de cada chamada. Em seguida, realize e exiba:
+Todos os alunos matriculados nas duas turmas sem repetição (União: addAll()).
+Apenas os alunos matriculados simultaneamente em ambas as turmas (Interseção: retainAll()).
+Conceitos: Interface Set, unicidade de elementos, tabela hash e operações matemáticas de conjuntos.
+
