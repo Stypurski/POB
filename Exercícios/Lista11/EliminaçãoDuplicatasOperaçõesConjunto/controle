@@ -1,0 +1,50 @@
+package Exercícios.Lista11.EliminaçãoDuplicatasOperaçõesConjunto.controle;
+
+import Exercícios.Lista11.EliminaçãoDuplicatasOperaçõesConjunto.dominio.Numeros;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        Numeros numeros =  new Numeros();
+        
+        int turma = 1;
+        System.out.println("Insira quantos alunos deseja inserir na turmaA : ");
+        int qtt = sc.nextInt();
+        numeros.recebedorItens(qtt, turma);
+                
+        turma = 2;
+        System.out.println("Insira quantos alunos deseja inserir na turma B: ");
+        qtt = sc.nextInt();
+        numeros.recebedorItens(qtt, turma);
+                
+        int opcao = 0;
+        
+        while(opcao != 3){
+            System.out.print("Escolha a acao que deseja executar: \n\t1-Exibir os alunos matriculados em todas as turmas sem repeticao \n\t2- Exibir alunos em comum entre as duas turmas\n\t3- Sair ");
+            opcao = sc.nextInt();
+            
+            switch(opcao){
+                
+                case 1:
+                    numeros.exibidorTodos();
+                    break;
+                
+                case 2:
+                    numeros.exibidorComum();
+                    break;
+                    
+                case 3:
+                    System.out.println("Programa encerrado");
+                    break;
+                
+                default:
+                System.out.println("Opcao invalida");
+                break;
+            }
+        }
+        
+        sc.close();
+    }
+}
