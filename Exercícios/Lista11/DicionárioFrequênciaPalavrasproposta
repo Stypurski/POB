@@ -1,0 +1,3 @@
+Dicionário de Frequência de Palavras (HashMap)
+Enunciado: Escreva um programa que receba um texto (frase longa) do usuário, divida o texto em palavras separadas por espaços (utilizando .toLowerCase() e .split("\\s+")) e utilize um HashMap<String, Integer> para contar a quantidade de ocorrências de cada palavra. Ao final, percorra o mapa exibindo cada palavra e sua respectiva frequência.
+Conceitos: Interface Map, pares chave-valor (put, getOrDefault), iteração sobre entrySet().
