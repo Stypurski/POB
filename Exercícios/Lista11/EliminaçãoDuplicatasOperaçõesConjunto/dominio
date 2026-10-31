@@ -1,0 +1,59 @@
+package Exercícios.Lista11.EliminaçãoDuplicatasOperaçõesConjunto.dominio;
+
+import java.util.Set;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Numeros{
+    
+    HashSet<Integer> numerosA = new HashSet<>();
+    HashSet<Integer> numerosB = new HashSet<>();
+    
+    public void recebedorItens(int qtt, int turma){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int temp;
+        boolean retorno;
+        
+        System.out.println("Insira os numeros desejados: ");
+        if(turma == 1){
+            for(int i = 0; i<qtt; i++){
+            temp = sc.nextInt();
+            retorno = numerosA.add(temp);
+            if(!retorno){
+                System.out.println("Nao sao permitidos caracteres repetidos");
+            }
+        }
+        }else{
+        if(turma == 2){
+            for(int i = 0; i<qtt; i++){
+            temp = sc.nextInt();
+            retorno = numerosB.add(temp);
+            if(!retorno){
+                System.out.println("Nao sao permitidos caracteres repetidos");
+            }
+        }
+        }else{
+            System.out.println("Numero inserido para turma invalido");
+        }
+        }
+    }
+    
+    
+    public void exibidorTodos(){
+       HashSet<Integer> todos = new HashSet<>(numerosA);
+       todos.addAll(numerosB);
+       System.out.println("Exibindo todos os numeros: ");
+       System.out.print(todos);
+    }
+    
+    public void exibidorComum(){
+        HashSet<Integer> comum = new HashSet<>(numerosA);
+        comum.retainAll(numerosB);
+        System.out.println("Exibindo numeros em comum entre Alunos da classe A e B: ");
+        System.out.println(comum);
+    }
+    
+    sc.close();
+}
