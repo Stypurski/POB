@@ -1,0 +1,7 @@
+Controle de Estoque com Consulta e Atualização (HashMap)
+Enunciado: Crie um sistema de inventário de produtos onde a chave é o código do produto (String) e o valor é a quantidade em estoque (Integer). Implemente métodos para:
+Inserir novos produtos.
+Atualizar a quantidade somando ou subtraindo estoque com base em um código.
+Consultar se um código existe (containsKey()) antes de realizar a operação.
+Exibir a lista de todos os produtos com estoque zerado ou abaixo de um valor de alerta (ex: < 5 unidades).
+Conceitos: Manipulação de entradas de mapas, validação de chaves e atualização de valores associados.
