@@ -1,0 +1,59 @@
+package Exercícios.Lista11.ControleEstoqueConsultaAtualização.dominio;
+
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Estoque{
+    
+    Map<String, Integer> produtos = new HashMap<>();
+    Scanner sc = new Scanner(System.in);
+    
+    public void insercao(int qtt){
+        
+        String codigo;
+        int estoque;
+        
+        for(int i = 0; i<qtt; i++){
+            System.out.println("Insira o codigo do produto: ");
+            codigo = sc.nextLine();
+            
+            System.out.println("Insira o estoque do produto: ");
+            estoque = sc.nextInt();
+            sc.nextLine();
+            
+            produtos.put(codigo, estoque);
+        }
+    }
+    
+    public void atualizacao(String codigo, int estoqueNovo){
+        
+        boolean resultado  = produtos.containsKey(codigo);
+        
+        if(resultado){
+            int estoqueAtual = produtos.get(codigo);
+            int temp = estoqueAtual + estoqueNovo;
+            if(temp < 0){
+                System.out.println("ERRO, nao e possivel adicionar estoque negativo");
+                return;
+            }
+            produtos.put(codigo, temp);
+        }else{
+            System.out.println("Codigo nao existe");
+        }
+    }
+    
+    public void exibidor(){
+         
+        for(Map.Entry<String, Integer> produto : produtos.entrySet()){
+            int quantidade = produto.getValue();
+            if(quantidade == 0){
+                System.out.println("Produto com estoque zerado: " + produto.getKey() + "\n");
+            }else{
+                if(quantidade <= 5){
+                System.out.println("Pouco estoque disponivel: " + produto.getKey() + "\n");
+                }
+            }
+        }
+    }
+}
