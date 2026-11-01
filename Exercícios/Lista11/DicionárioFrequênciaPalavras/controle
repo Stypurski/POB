@@ -1,0 +1,20 @@
+package Exercícios.Lista11.DicionárioFrequênciaPalavras.controle;
+
+import Exercícios.Lista11.DicionárioFrequênciaPalavras.dominio.Dicionario;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner sc =  new Scanner(System.in);
+        
+        System.out.print("Insira sua frase: ");
+        String texto = sc.nextLine();
+        
+        Dicionario dicionario = new Dicionario();
+        
+        dicionario.formatador(texto);
+        
+        sc.close();
+    }
+}
