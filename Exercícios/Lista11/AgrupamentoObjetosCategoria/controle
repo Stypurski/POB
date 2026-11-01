@@ -1,1 +1,41 @@
+package Exercícios.Lista11.AgrupamentoObjetosCategoria.controle;
 
+import Exercícios.Lista11.AgrupamentoObjetosCategoria.dominio.Concatenador;
+import Exercícios.Lista11.AgrupamentoObjetosCategoria.dominio.Produto;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+        List<Produto> produtos = new ArrayList<>();
+
+        System.out.print("Insira quantos produtos deseja cadastrar: ");
+        int qtt = sc.nextInt();
+        sc.nextLine();
+
+        for (int i = 0; i < qtt; i++) {
+            System.out.print("Nome: ");
+            String nome = sc.nextLine();
+
+            System.out.print("Categoria: ");
+            String categoria = sc.nextLine();
+
+            System.out.print("Preço: ");
+            double preco = sc.nextDouble();
+            sc.nextLine();
+
+            produtos.add(new Produto(nome, categoria, preco));
+        }
+
+        Concatenador c = new Concatenador();
+        Map<String, List<Produto>> mapa = c.concatenador(produtos);
+
+        c.exibidor(mapa);
+
+        sc.close();
+    }
+}
