@@ -1,0 +1,53 @@
+import Exercícios.Lista11.ControleEstoqueConsultaAtualização.dominio.Estoque;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner sc =  new Scanner(System.in);
+        
+        System.out.print("Insira quantos produtos deseja adicionar ao estoque: ");
+        int qtt = sc.nextInt();
+        sc.nextLine();
+        Estoque produto = new Estoque();
+        produto.insercao(qtt);
+     
+       int escolha =0;
+       while(escolha != 4){
+           System.out.println("Insira a operacao que deseja realizar: \n\t1-Inserir novo produto \n\t2-Atualizar estoque\n\t3-Exibir lista de baixo estoque\n\t4-Sair");
+           escolha = sc.nextInt();
+           sc.nextLine();
+           
+           switch(escolha){
+               
+            case 1:
+                produto.insercao(1);
+                break;
+            
+            case 2: 
+                System.out.println("Insira o codigo do prodto que deseja atualizar: ");
+                String codigo = sc.nextLine();
+                System.out.println("Insira a atualizacao de estoque: ");
+                int estoqueNovo = sc.nextInt();
+                sc.nextLine();
+                produto.atualizacao(codigo, estoqueNovo);
+                break;
+            
+            case 3:
+                produto.exibidor();
+                break;
+            
+            case 4: 
+                System.out.print("Programa encerrado");
+                break;
+                
+            default:
+            System.out.println("Codigo inserido invalido");
+            break;
+           }
+           
+       }
+        
+        sc.close();
+    }
+}
