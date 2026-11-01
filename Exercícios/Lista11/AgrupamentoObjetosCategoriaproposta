@@ -1,0 +1,3 @@
+ Integração Completa: Agrupamento de Objetos por Categoria (ArrayList + HashMap)
+Enunciado: Crie uma classe Produto com os atributos nome (String), categoria (String) e preco (double). Crie uma lista (ArrayList<Produto>) contendo diversos produtos de categorias variadas (ex: "Informática", "Alimentos", "Livros"). Em seguida, implemente uma rotina que agrupe esses produtos em um HashMap<String, List<Produto>>, onde cada chave é uma categoria e o valor associado é uma lista contendo apenas os produtos daquela categoria. Ao final, exiba os produtos agrupados sob seus respectivos títulos de categoria.
+Conceitos: Estruturas de dados aninhadas (Map<K, List<V>>), inicialização condicional de listas dentro de mapas e agrupamento de objetos de domínio
