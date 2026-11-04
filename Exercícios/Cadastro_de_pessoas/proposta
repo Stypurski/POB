@@ -1,0 +1,6 @@
+Construa um projeto para um cadastro de pessoas com base em uma classe Pessoa com os seguintes atributos: 
+  id (int) , nome(String) idade(int) e altura (double). 
+Os dados de cada pessoa devem ser armazenados em um arquivo de texto (pessoas.csv). 
+Use como referência os projetos abordados em aulas anteriores. 
+Tente usar o padrão arquitetural MVC, tratamentos de exceções e ArryLIst. 
+Envie o link do repositório com sua resposta.
