@@ -1,7 +1,8 @@
-package Exercícios.Lista12.FiltragemTransformaçãoOrdenaçãoNomes.Main;
+package Exercícios.Lista12.FiltragemTransformaçãoOrdenaçãoNomes;
 
 import java.util.List;
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class Main{
     public static void main(String[] args){
@@ -12,7 +13,7 @@ public class Main{
         .filter(Nome -> Nome.toLowerCase().startsWith("a"))
         .map(Nome -> Nome.toUpperCase())
         .sorted()
-        .toList();
+        .collect(Collectors.toList());
         
         System.out.println(processador);
     }
