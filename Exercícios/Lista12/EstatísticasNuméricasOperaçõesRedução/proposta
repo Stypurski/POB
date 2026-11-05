@@ -1,0 +1,6 @@
+ Estatísticas Numéricas e Operações de Redução (reduce / mapToDouble)
+Enunciado: Crie uma classe Produto com atributos nome (String) e preco (double). Dada uma lista contendo 6 produtos, utilize Streams para realizar os seguintes cálculos sem usar laços tradicionais (for/while):
+O valor total somado de todos os produtos (mapToDouble().sum() ou reduce).
+O preço médio dos produtos (average()).
+O produto com o maior preço da lista (max() com Comparator).
+Conceitos: DoubleStream, funções redutoras (sum, average, reduce), OptionalDouble e Optional<T>.
