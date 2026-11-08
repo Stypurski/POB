@@ -1,0 +1,5 @@
+Agrupamento e Particionamento de Dados (Collectors.groupingBy e partitioningBy)
+Enunciado: Crie uma classe Aluno com nome (String), curso (String) e notaFinal (double). Dada uma lista com diversos alunos de diferentes cursos:
+Agrupe os alunos pelo nome do curso, gerando um Map<String, List<Aluno>> via Collectors.groupingBy.
+Particione todos os alunos em dois grupos: os aprovados (nota > 7.0) e os reprovados (nota <= 7.0), gerando um Map<Boolean, List<Aluno>> via Collectors.partitioningBy.
+Conceitos: Collectors.groupingBy, Collectors.partitioningBy, predicados booleanos e transformações em mapas estruturados.
