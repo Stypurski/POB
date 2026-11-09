@@ -1,0 +1,6 @@
+: Criação e Uso de Interfaces Funcionais Personalizadas (@FunctionalInterface)
+Enunciado: Defina uma interface funcional chamada TransformadorTexto com a anotação @FunctionalInterface e um único método abstrato: String transformar(String entrada). Em seguida:
+Crie um método utilitário public static List<String> processarLista(List<String> lista, TransformadorTexto regra).
+Na classe principal, execute esse método passando diferentes implementações via Expressões Lambda e Method References (ex: inverter a string, colocar entre colchetes [texto] e transformar em caixa alta String::toUpperCase).
+Conceitos: Anotação @FunctionalInterface, contratos funcionais customizados, closures/lambdas de alta ordem e Method References (::).
+ 
