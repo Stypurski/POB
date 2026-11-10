@@ -1,0 +1,7 @@
+Pipeline com Interfaces Funcionais Nativas (Predicate, Function, Consumer)
+Enunciado: Crie um fluxo de processamento de funcionários (Funcionario: nome, departamento, salario) combinando explicitamente as interfaces funcionais nativas do pacote java.util.function:
+Defina um Predicate<Funcionario> para filtrar funcionários do departamento "TI".
+Defina uma Function<Funcionario, Double> para extrair o salário com um reajuste projetado de 10%.
+Defina um Consumer<Double> para imprimir o valor projetado formatado no console.
+Encadeie essas três interfaces funcionais em um pipeline único de Stream sobre uma lista de funcionários.
+Conceitos: Interfaces funcionais padrão (java.util.function.Predicate, Function, Consumer), composição funcional e desacoplamento de pipelines.
