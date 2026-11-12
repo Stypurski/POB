@@ -1,0 +1,5 @@
+Criação e Escrita Segura de Relatório (Path e Files.writeString)
+Enunciado: Crie um programa que defina um caminho de diretório dados/relatorios e um arquivo chamado sumario.txt. O programa deve verificar se o diretório existe e, caso não exista, criá-lo automaticamente com Files.createDirectories(). Em seguida, grave uma string multilinhas contendo informações sobre a execução do sistema utilizando Files.writeString() com as opções CREATE e TRUNCATE_EXISTING.
+Conceitos: Path.of(), instanciação segura de diretórios (Files.createDirectories) e escrita simplificada de texto.
+Exemplo de Saída: Arquivo criado em dados/relatorios/sumario.txt com o cabeçalho e timestamp da execução.
+
