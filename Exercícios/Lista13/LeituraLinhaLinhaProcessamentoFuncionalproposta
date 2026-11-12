@@ -1,0 +1,7 @@
+Leitura Linha a Linha com Processamento Funcional (Files.lines())
+Enunciado: Crie um programa que leia um arquivo de log estruturado chamado servidor.log contendo entradas no formato [NÍVEL] Mensagem (ex: [INFO] Servidor iniciado, [ERROR] Falha de conexao, [ERROR] Timeout no banco). Utilizando Files.lines(path) em um bloco try-with-resources, processe o stream de linhas para:
+Filtrar apenas as linhas de erro ([ERROR]).
+Extrair apenas a mensagem limpa (removendo o prefixo [ERROR] ).
+Contar e exibir o total de erros encontrados e listar cada mensagem.
+Conceitos: Stream<String> com I/O (Files.lines), liberação automática do descritor de arquivo via try-with-resources e encadeamento com a Streams API.
+
