@@ -1,0 +1,7 @@
+Parser e Processamento de CSV com Cálculo de Totais (Files.readAllLines)
+Enunciado: Desenvolva um programa que processe um arquivo produtos.csv onde cada linha (exceto o cabeçalho) segue o padrão Nome,Quantidade,PrecoUnitario (ex: Monitor,5,1200.00). O programa deve:
+Ler todas as linhas utilizando Files.readAllLines().
+Pular a primeira linha (cabeçalho).
+Realizar o split dos campos, calcular o valor total de cada item (quantidade * preço) e somar o valor global do inventário.
+Tratar exceções de formato (NumberFormatException) e I/O (IOException).
+Conceitos: Leitura em memória de arquivos tabulares, conversão de dados primitivos e controle de exceções de parsing em arquivos.
