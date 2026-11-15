@@ -1,0 +1,10 @@
+Exercício 5: Transformação em Pipeline e Gravação em Novo Arquivo (Leitura → Stream → Escrita)
+Enunciado: Crie um programa que leia um arquivo de texto bruto clientes_bruto.txt contendo nomes em formatos despadronizados (letras minúsculas, espaços extras antes/depois). O programa deve:
+Abrir um stream de leitura com Files.lines().
+Limpar os espaços em branco das extremidades (.trim()).
+Filtrar linhas em branco (!line.isBlank()).
+Converter cada nome para o formato padronizado (primeira letra em maiúscula, restante em minúscula ou tudo em caixa alta).
+Gravar a lista tratada em um novo arquivo clientes_padronizado.txt utilizando Files.write() com StandardOpenOption.CREATE.
+Conceitos: Pipeline completo de I/O (leitura streaming → transformação intermediária → gravação atômica), manipulação de List<String> e coletores de I/O.
+
+ 
