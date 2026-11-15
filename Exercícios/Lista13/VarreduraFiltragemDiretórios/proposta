@@ -1,0 +1,7 @@
+Varredura e Filtragem de Diretórios (Files.walk() e Files.list())
+Enunciado: Escreva um programa que faça uma varredura recursiva em uma pasta de projeto (ex: pasta src ou projeto/) utilizando Files.walk(path). O programa deve:
+Filtrar apenas arquivos regulares (Files.isRegularFile()).
+Selecionar apenas arquivos com extensão .java.
+Exibir o caminho relativo, o tamanho em bytes (Files.size()) de cada arquivo e a soma total do tamanho dos arquivos Java encontrados.
+Conceitos: Varredura recursiva de árvores de diretórios (Files.walk), inspeção de metadados de arquivos e fechamento do stream de diretório.
+
